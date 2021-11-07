@@ -1,5 +1,3 @@
-#+TITLE: Refs
-
 * Math refs
 ** Rottmann
 *** Rottmann full ref
