@@ -1,3 +1,5 @@
+#+TITLE: Refs
+
 * Math refs
 ** Rottmann
 *** Rottmann full ref
@@ -62,6 +64,34 @@
     year={2018},
     translator={Razi Naqvi}
     }
+* Astronomy
+** Articles
+*** IRAS19254-7245
+    @article{article:iras,
+    author={L. Vanzi and S. Bagnulo and E. Le Floc'h and  R. Maiolino and E. Pompei, W. Walsh},
+    title={Multi-wavelength Study of IRAS 19254-7245 - The Superanennae},
+    journal={Astronomy and astrophysics},
+    year={2002},
+    volume={1}}
+*** apex antenna efficiencies
+    @online{apex:antenna,
+    url={https://www.apex-telescope.org/telescope/efficiency/index.php.old},
+    title={APEX telescope efficiencies},
+    urldate={2021-11-05}}
+*** AST2210
+**** Claudia
+***** Lecture notes
+****** 6
+@misc{claudia:6,
+author={Claudia Cicone},
+title={Sub-millimeter/radio observations (single-dish)},
+year={2021},
+month={October}}
+*** Splatalogue
+    @online{splat,
+    url={https://splatalogue.online/},
+    title={Splatalogue},
+    urldate={2021-11-05}}
 
 * Exphil refs
 ** pensum
