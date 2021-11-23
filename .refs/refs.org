@@ -92,6 +92,14 @@ month={October}}
     url={https://splatalogue.online/},
     title={Splatalogue},
     urldate={2021-11-05}}
+*** NGC1365
+**** Magnum Survey
+    @article{article:venturi,
+    author={G. Venturi and E. Nardini and A. Marconi and S. Carniani and M. Mingozzi and G. Cresci and F. Mannucci and G. Risaliti and R. Maiolino and B. Balmaverde and A. Bongiorno and M. Brusa and A. Capetti and C. Cicone and S. Ciroi and C. Feruglio and F. Fiore and A. Gallazzi and F. La Franca and V. Mainieri and K. Matsuoka and T. Nagao and M. Perna and E. Piconcelli and E. Sani and P. Tozzi and S. Zibetti},
+    title={MAGNUM survey: A MUSE-Chandra resolved view on ionized outflows and photoionization in the Seyfert galaxy NGC 1365},
+    journal={Astronomy and astrophysics},
+    year={2018},
+    volume={1}}
 
 * Exphil refs
 ** pensum
