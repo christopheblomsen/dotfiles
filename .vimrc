@@ -18,14 +18,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 let g:airline_powerline_fonts = 1
 
-"For supertab
-Plug 'ervandew/supertab'
-
 "For snippets
 Plug 'SirVer/ultisnips'
-let g:UltiSnipsExpandTrigger = "<c-tab>"
-let g:UltiSnipsJumpForwardTrigger = "<c-j>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 "Syntaxes
 Plug 'vim-syntastic/syntastic'
@@ -51,10 +45,6 @@ Plug 'scrooloose/nerdtree'
 "Python auto-complete
 Plug 'Valloric/YouCompleteMe'
 let g:SimpylFold_docstring_preview = 1
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
 
 "For Latex
 Plug 'lervag/vimtex'
@@ -133,7 +123,7 @@ syntax on
 
 "Hide .pyc files
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
- 
+
 " Bind End to save file if modified and execute python script in a buffer.
 nnoremap <silent> <End> :call SaveAndExecutePython()<CR>
 vnoremap <silent> <End> :<C-u>call SaveAndExecutePython()<CR>
@@ -193,22 +183,21 @@ endfunction
 
 "Auto folding
 autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview 
+autocmd BufWinEnter *.* silent loadview
 
 "Powerline
 set rtp+=/usr/lib/python3.8/site-packages/powerline/bindings/vim
 
 "Placeholder
-"inoremap <c-j> <Esc>/<++><Return>dei
+inoremap <c-j> <Esc>/<++><Return>dei
 
 "Inkspace
 inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
 nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
 
-"NERDtree 
+"NERDtree
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "Splits
 set splitbelow splitright
-
