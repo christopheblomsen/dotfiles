@@ -491,3 +491,11 @@ note = {Year: 2020,
         Publisher: Walt Disney Pictures, Pixar Animation Studios,
         På Side 1}
 }
+* Tables
+** Physics table
+    @book{Gyldendal:table,
+    author={John Haugan, Eimund Aamot},
+    title={Gyldendals tabeller og formler i fysikk, Fysikk 1 og Fysikk 2},
+    year={2011},
+    edition={2},
+    publisher={Gyldendal}}
