@@ -1,0 +1,91 @@
+
+%Standard stuff
+  \documentclass[a4paper,10pt,english]{article}
+  \usepackage[utf8]{inputenc}
+  \usepackage[english]{babel}
+  \usepackage{amsmath,graphicx,varioref,verbatim,amsfonts,geometry,enumerate,commath,textcomp,listings,siunitx,float}
+  % colors in text
+  \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+  % Hyper refs
+  \usepackage[colorlinks]{hyperref}
+  % inkspace
+  \usepackage{import}
+  \usepackage{xifthen}
+  \usepackage{pdfpages}
+  \usepackage{transparent}
+  \usepackage{tikz,pgfplots,cancel}
+
+%Biber
+\usepackage[backend=biber, style=chicago-authordate]{biblatex}
+  \AtEveryBibitem{%
+    \clearlist{language}}
+
+% Colour scheme for hyperlinks
+  \hypersetup{%
+    colorlinks,
+    citecolor=Blue,
+    linkcolor=Blue,
+    urlcolor=Blue}
+
+% Document formatting
+  \setlength{\parindent}{0mm}
+  \setlength{\parskip}{1.5mm}
+  \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+  \definecolor{mylilas}{RGB}{170,55,241}
+% Color scheme for listings
+  \usepackage{textcomp}
+  \definecolor{codegreen}{rgb}{0,0.6,0}
+  \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+  \definecolor{codepurple}{rgb}{0.58,0,0.82}
+  \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+  \definecolor{listinggray}{gray}{0.9}
+  \definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+  \lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+  }
+
+  \lstset{style=mystyle}
+
+%for toc
+  \usepackage{tocloft}
+  \addtolength{\cftsubsecnumwidth}{40pt}
+
+% new commands
+  \renewcommand{\lstlistingname}{Kode}
+  \renewcommand{\lstlistlistingname}{\lstlistingname}
+  \newcommand{\dd}[1]{\mathrm{d}#1}
+  \def\doubleunderline#1{\underline{\underline{#1}}}
+  \renewcommand{\thesection}{\Alph{section}}
+  \renewcommand{\thesubsection}{Oppgave \arabic{subsection}}
+  \newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
+
+\title{$0}
+\addbibresource{/home/chris/.refs/refs.org} % Entries are in the "refs.bib" file
+\author{Christophe Kristian Blomsen}
+
+\begin{document}
+\begin{titlepage}
+  \maketitle
+  \tableofcontents
+\end{titlepage}
+
+
+\newpage
+\newpage
+\printbibliography[heading=bibintoc, title={Referanser}]
+\end{document}
